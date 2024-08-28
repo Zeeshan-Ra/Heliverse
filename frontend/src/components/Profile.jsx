@@ -19,7 +19,7 @@ const Profile = () => {
   const createTeam = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/team/",
+        "https://heliverse-tx7k.onrender.com/api/team/",
         {
           memberIds: teamMembers.map((member) => member.id),
         }
