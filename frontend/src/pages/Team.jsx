@@ -18,7 +18,7 @@ const Team = () => {
   useEffect(() => {
     const getTeam = async () => {
       const response = await axios.get(
-        "http://localhost:8000/api/team/all"
+        "https://heliverse-tx7k.onrender.com/api/team/all"
       );
       const data = await response.data;
       setTeams(data);
@@ -30,7 +30,7 @@ const Team = () => {
     if (teamId === "") return;
 
     const response = await axios.get(
-      `http://localhost:8000/api/team/${teamId}`
+      `https://heliverse-tx7k.onrender.com/api/team/${teamId}`
     );
     const data = await response.data;
     setTeams([data]);
