@@ -21,7 +21,7 @@ const Users = () => {
   const fetchUsers = async () => {
     setLoading(true);
     try {
-      let url = `http://localhost:8000/api/users?page=${currentPage}`;
+      let url = `https://heliverse-tx7k.onrender.com/api/users?page=${currentPage}`;
       if (name) url += `&name=${name}`;
       if (status) url += `&available=${status}`;
       if (domain) url += `&domain=${domain}`;
